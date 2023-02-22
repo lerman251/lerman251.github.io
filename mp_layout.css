@@ -192,35 +192,33 @@ footer {
     --gray4: #131313;
     --gray5: #acacac;
     --gray6: #ececec;
+    --gray7: #ececec;
 }
 
 .light {
-    --bg: linear-gradient(to right, var(--blue1), var(--blue2));
-    --bg-nav: linear-gradient(to right, var(--blue1), var(--blue2));
-    --bg-dropdown: var(--blue2);
-    --text: var(--gray1);
-    --border-color: var(--blue4);
+    --bg: linear-gradient(to right, var(--gray6), var(--gray1));
+    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray6));
+    --bg-dropdown: var(--gray6);
+    --text: var(--gray4);
+    --border-color: var(--gray2);
     --bg-solar: var(--blue3);
 }
   
 
 .dark {
     --bg: linear-gradient(to right, var(--gray3), var(--gray2));
-    --bg-nav: linear-gradient(to right, var(--gray3), var(--gray2));
-    --bg-dropdown: var(--gray2);
-    --text: var(--blue4);
+    --bg-nav: linear-gradient(to right, var(--gray2), var(--gray3));
+    --bg-dropdown: var(--gray4);
+    --text: var(--gray7);
     --border-color: var(--blue4);
     --bg-solar: var(--gray3);
 }
 
 .solar {
-	--blue1: #6e78ff;
-	--blue2: #44549C;
-	--blue3: #84D4DC;
-	--blue4: #6C7CFB;
-	--gray1: #D6DFE6;
-	--gray2: #283038;
-	--gray3: #60686F;
+	--gray1: var(--blue2);
+	--gray6: var(--blue4);
+    --gray3: var(--blue4);
+    --gray2: var(--blue2);
 }
 
 #dark::before {
