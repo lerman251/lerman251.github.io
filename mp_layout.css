@@ -1,0 +1,235 @@
+@charset "utf-8";
+/*
+   CSS Light & Dark Mode Project
+   Filename: mp_layout.css
+
+   This file contains the layout styles used in the Mobile Panini website
+
+	Author: Your Name
+    Date:   2017-03-01
+
+
+*/
+
+
+
+/* =============================================
+	Base layout styles used by mobile devices
+	up to 480px and cascaded to larger devices 
+	unless superceded by other styles.
+   =============================================
+*/
+
+/* Using this CSS file as your base to start with redesign it to be a Light Mode for the website. Do NOT leave this as is, you must change the original to be your own light mode (aka do not leave the background color and text boxes as red). Then duplicate and rename the file twice. Name one file dark_mode.css and give the other a unique name ending with the word "_mode.css" */
+/* For the third css style you are not necissarlily making another "light/dark mode" but you are making your own unique color mode that can follow whatever scheme you want. You can look through color schemes for VSC for inspiration and use online resources like colordesigner.io or color.adobe.com for find good color palettes*/
+/* When you place the icons for your color modes place them in the upper-right-hand corner above the mp_logo.png image. You will have to find/create your own icons. I recommend using .svg files so they are infinitely scalable (just set their size to what you need). You can use svgrepo.com to find some free .svg images to use. */
+/* You will need to take the mp_photo1.png into a photo editor to remove the white background, in order for it to work with other color modes. You could also replace the picture with a different sandwich picture or graphic of the same size. The picture dimensions are 480x320px */
+/* Change the font style to something that's more modern, readable, and fits with the style of a restuarant website */
+/* Make the Navigation Menu at the top look good, right now it is boring vanilla HTML*/
+/* Reposition the Phone and Email contact info to be in the footer of the website and change the footer to be of higher quality design (look at footers from other websites to see how the did theirs). */
+/* Make a different Mobile Panini logo in Figma or another Photo Editor/Graphic Design software (this is another chance you use your creativity). Logo Dimensions are  1460x240px*/
+
+/* In general. Use your creativity and coding skills to upgrade this site and make it look good, worth paying for good. Look for things to fix/improve (like the boring bullet point list on the mp_catering.html) */
+
+/* This is an oppurtunity to flex your creative muscles and once you are done there will be enough changed to include this as a part of your Work Samples */
+
+/* IMPORTANT */
+/* When finished with this project go through all the files and delete all of the comments (unless they are comments that you wrote). */
+/* Upload to a public repo on your GitHub account and publish the site. */
+/* Paste the link to either your repo or the website link after it is published to Canvas to submit for grading and peer review */
+/* Upload the project folder as a .zip file to Mrs.Dirnberger's ELA Canvas to be used as one of your work samples (if you do not already have two samples you would rather use instead)
+
+
+
+*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    color: var(--text);
+    background: var(--bg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+a:visited {
+    color: currentColor;
+}
+header {
+    position: relative;
+    display: flex;
+    padding: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 3.5em;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: larger;
+}
+.welcome
+.sandwich {
+    flex-wrap: nowrap;
+}
+.p1, .p2, .p3, .menu, .events, .about {
+    font-family: 'EB Garamond', serif;
+    margin-left: 10px;
+}
+#h1 {
+    margin-left: 5px;
+}
+#menu {
+    margin-left: 15px;
+}
+main {
+    min-height: 1000px;
+    padding: 2rem;
+}
+
+img {
+    margin: 2em 0 0;
+}
+footer {
+	text-align: center;
+	font-size: 0.6em;
+	margin-top: 4%;
+	border-top: 3px outset #84D4DC;
+	font-family: 'Dancing Script', cursive;
+	clear: both;
+	padding-bottom: 20px;
+}
+.logo {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    height: 70px;
+    width: 100%;
+    background: var(--bg-nav);
+    color: var(--text);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+
+.dropdown {
+    position: absolute;
+    width: 500px;
+    opacity: 0;
+    z-index: 2;
+    background: var(--bg-dropdown);
+    border-top: 2px solid var(--border-color);
+
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+   
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+    transform: translateX(-76%);
+
+    transition: opacity .15s ease-out;
+}
+
+
+.has-dropdown:focus-within .dropdown   {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.dropdown-item a {
+    width: 100%;
+    height: 100%;
+    size: 0.7rem;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.dropdown-item a::before {
+    content: ' ';
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Themes */
+
+
+:root {
+	--blue1: #6e78ff;
+	--blue2: #44549C;
+	--blue3: #84D4DC;
+	--blue4: #6C7CFB;
+	--gray1: #D6DFE6;
+	--gray2: #283038;
+	--gray3: #60686F;
+    --gray4: #131313;
+    --gray5: #acacac;
+    --gray6: #ececec;
+}
+
+.light {
+    --bg: linear-gradient(to right, var(--blue1), var(--blue2));
+    --bg-nav: linear-gradient(to right, var(--blue1), var(--blue2));
+    --bg-dropdown: var(--blue2);
+    --text: var(--gray1);
+    --border-color: var(--blue4);
+    --bg-solar: var(--blue3);
+}
+  
+
+.dark {
+    --bg: linear-gradient(to right, var(--gray3), var(--gray2));
+    --bg-nav: linear-gradient(to right, var(--gray3), var(--gray2));
+    --bg-dropdown: var(--gray2);
+    --text: var(--blue4);
+    --border-color: var(--blue4);
+    --bg-solar: var(--gray3);
+}
+
+.solar {
+	--blue1: #6e78ff;
+	--blue2: #44549C;
+	--blue3: #84D4DC;
+	--blue4: #6C7CFB;
+	--gray1: #D6DFE6;
+	--gray2: #283038;
+	--gray3: #60686F;
+}
+
+#dark::before {
+    background: #2a2e35;
+}
+
+#light::before {
+    background: #ffffff;
+}
+#solar::before {
+    background: var(--bg-solar);
+}
