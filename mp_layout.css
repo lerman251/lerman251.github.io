@@ -13,35 +13,7 @@
 
 
 
-/* =============================================
-	Base layout styles used by mobile devices
-	up to 480px and cascaded to larger devices 
-	unless superceded by other styles.
-   =============================================
-*/
 
-/* Using this CSS file as your base to start with redesign it to be a Light Mode for the website. Do NOT leave this as is, you must change the original to be your own light mode (aka do not leave the background color and text boxes as red). Then duplicate and rename the file twice. Name one file dark_mode.css and give the other a unique name ending with the word "_mode.css" */
-/* For the third css style you are not necissarlily making another "light/dark mode" but you are making your own unique color mode that can follow whatever scheme you want. You can look through color schemes for VSC for inspiration and use online resources like colordesigner.io or color.adobe.com for find good color palettes*/
-/* When you place the icons for your color modes place them in the upper-right-hand corner above the mp_logo.png image. You will have to find/create your own icons. I recommend using .svg files so they are infinitely scalable (just set their size to what you need). You can use svgrepo.com to find some free .svg images to use. */
-/* You will need to take the mp_photo1.png into a photo editor to remove the white background, in order for it to work with other color modes. You could also replace the picture with a different sandwich picture or graphic of the same size. The picture dimensions are 480x320px */
-/* Change the font style to something that's more modern, readable, and fits with the style of a restuarant website */
-/* Make the Navigation Menu at the top look good, right now it is boring vanilla HTML*/
-/* Reposition the Phone and Email contact info to be in the footer of the website and change the footer to be of higher quality design (look at footers from other websites to see how the did theirs). */
-/* Make a different Mobile Panini logo in Figma or another Photo Editor/Graphic Design software (this is another chance you use your creativity). Logo Dimensions are  1460x240px*/
-
-/* In general. Use your creativity and coding skills to upgrade this site and make it look good, worth paying for good. Look for things to fix/improve (like the boring bullet point list on the mp_catering.html) */
-
-/* This is an oppurtunity to flex your creative muscles and once you are done there will be enough changed to include this as a part of your Work Samples */
-
-/* IMPORTANT */
-/* When finished with this project go through all the files and delete all of the comments (unless they are comments that you wrote). */
-/* Upload to a public repo on your GitHub account and publish the site. */
-/* Paste the link to either your repo or the website link after it is published to Canvas to submit for grading and peer review */
-/* Upload the project folder as a .zip file to Mrs.Dirnberger's ELA Canvas to be used as one of your work samples (if you do not already have two samples you would rather use instead)
-
-
-
-*/
 body {
     margin: 0;
     padding: 0;
@@ -193,6 +165,7 @@ footer {
     --gray5: #acacac;
     --gray6: #ececec;
     --gray7: #ececec;
+    --gray8: #131313;
 }
 
 .light {
@@ -208,7 +181,7 @@ footer {
 .dark {
     --bg: linear-gradient(to right, var(--gray3), var(--gray2));
     --bg-nav: linear-gradient(to right, var(--gray2), var(--gray3));
-    --bg-dropdown: var(--gray4);
+    --bg-dropdown: var(--gray8);
     --text: var(--gray7);
     --border-color: var(--blue4);
     --bg-solar: var(--gray3);
@@ -219,6 +192,7 @@ footer {
 	--gray6: var(--blue4);
     --gray3: var(--blue4);
     --gray2: var(--blue2);
+    --gray8: var(--blue4);
 }
 
 #dark::before {
