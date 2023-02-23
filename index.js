@@ -34,7 +34,7 @@ solarButton.onclick = () => {
       --bg-solar: var(--yellow);
     `
 
-    solarButton.innerText = 'Colored off';
+    solarButton.innerText = 'Classic Themes';
     darkButton.innerText = 'Dark';
     lightButton.innerText = 'Light';
     localStorage.removeItem('isSolar');
@@ -46,7 +46,7 @@ solarButton.onclick = () => {
     `
 
     body.classList.add('solar');
-    solarButton.innerText = 'Colored on';
+    solarButton.innerText = 'Blue Theme';
     darkButton.innerText = 'Light text';
     lightButton.innerText = 'Dark text';
     localStorage.setItem('isSolar', true);
