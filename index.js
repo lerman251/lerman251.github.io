@@ -34,8 +34,9 @@ solarButton.onclick = () => {
       --bg-solar: var(--yellow);
     `
 
-    solarButton.innerText = 'colored off';
-
+    solarButton.innerText = 'Colored off';
+    darkButton.innerText = 'Dark';
+    lightButton.innerText = 'Light';
     localStorage.removeItem('isSolar');
 
   } else {
@@ -45,8 +46,9 @@ solarButton.onclick = () => {
     `
 
     body.classList.add('solar');
-    solarButton.innerText = 'colored on';
-
+    solarButton.innerText = 'Colored on';
+    darkButton.innerText = 'Light text';
+    lightButton.innerText = 'Dark text';
     localStorage.setItem('isSolar', true);
   }
 };
